@@ -13,12 +13,20 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
+  height: 8px;
 }
+
 ::-webkit-scrollbar-thumb {
-  background-color: #5090e5;
-  border-radius: 40px;
+  background-color: rgba(255, 130, 17, 0.5); /* #FF8211 dengan transparansi */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 130, 17, 0.7); /* Lebih solid saat hover */
+}
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
