@@ -1,57 +1,80 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import styles from "./Pagination.module.scss";
 
-const Pagination = ({
-  currentPage,
-  totalItems,
-  itemsPerPage,
-  onPageChange,
-  onAfterPageChange,
-}) => {
+const Pagination = ({ currentPage, totalItems, itemsPerPage, onPageChange }) => {
   const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const maxPageNumbersToShow = 3;
+  const pageNumbers = [];
+
+  if (totalPages < 1) return null;
+
+  const half = Math.floor(maxPageNumbersToShow / 2);
+  let startPage = Math.max(2, currentPage - half);
+  let endPage = Math.min(totalPages - 1, currentPage + half);
+
+  if (currentPage <= half + 1) {
+    startPage = 2;
+    endPage = Math.min(totalPages - 1, maxPageNumbersToShow);
+  } else if (currentPage >= totalPages - half) {
+    startPage = Math.max(2, totalPages - maxPageNumbersToShow + 1);
+    endPage = totalPages - 1;
+  }
+
+  // Always include first page
+  pageNumbers.push(1);
+
+  // Ellipsis before
+  if (startPage > 2) {
+    pageNumbers.push("start-ellipsis");
+  }
+
+  // Middle pages
+  for (let i = startPage; i <= endPage; i++) {
+    pageNumbers.push(i);
+  }
+
+  // Ellipsis after
+  if (endPage < totalPages - 1) {
+    pageNumbers.push("end-ellipsis");
+  }
+
+  // Last page
+  if (totalPages > 1) {
+    pageNumbers.push(totalPages);
+  }
 
   return (
     <div className={styles["pagination"]}>
       <button
-        type="button"
-        onClick={() => {
-          if (currentPage > 1) {
-            onPageChange(currentPage - 1);
-            onAfterPageChange?.();
-          }
-        }}
+        onClick={() => currentPage > 1 && onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
         className={styles["button-arrow"]}
       >
         <ChevronLeft />
       </button>
 
-      {/* Page number loop */}
-      {Array.from({ length: totalPages }).map((_, index) => {
-        const pageNum = index + 1;
+      {pageNumbers.map((num, index) => {
+        if (num === "start-ellipsis" || num === "end-ellipsis") {
+          return (
+            <span key={num + index} className={styles["ellipsis"]}>
+              ...
+            </span>
+          );
+        }
+
         return (
           <button
-            type="button"
-            key={pageNum}
-            className={currentPage === pageNum ? styles["active"] : ""}
-            onClick={() => {
-              onPageChange(pageNum);
-              onAfterPageChange?.(); 
-            }}
+            key={num}
+            className={`${styles["page-button"]} ${currentPage === num ? styles["active"] : ""}`}
+            onClick={() => onPageChange(num)}
           >
-            {pageNum.toString().padStart(2, "0")}
+            {num.toString().padStart(2, "0")}
           </button>
         );
       })}
 
       <button
-        type="button"
-        onClick={() => {
-          if (currentPage < totalPages) {
-            onPageChange(currentPage + 1);
-            onAfterPageChange?.();
-          }
-        }}
+        onClick={() => currentPage < totalPages && onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
         className={styles["button-arrow"]}
       >

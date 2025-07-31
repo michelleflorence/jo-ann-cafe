@@ -25,12 +25,15 @@ const MenuSection = () => {
 
       <div>
         <TabMenu
-          defaultActive="all"
+          defaultActive="all-menu"
           tabs={[
-            { key: "all", label: "All Menu", content: <AllMenu /> },
-            { key: "food", label: "Food", content: <>Food</> },
+            { key: "all-menu", label: "All Menu", content: <AllMenu /> },
+            {
+              key: "food-snack",
+              label: "Food & Snack",
+              content: <>Food and Snack</>,
+            },
             { key: "drink", label: "Drink", content: <>Drink</> },
-            { key: "snacks", label: "Snacks", content: <>Snack</> },
             { key: "other", label: "Other", content: <>Other</> },
           ]}
         />
