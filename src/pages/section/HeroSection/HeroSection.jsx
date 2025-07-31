@@ -18,8 +18,27 @@ const HeroSection = () => {
           crafted just for you.
         </p>
         <div className={styles["button"]}>
-          <Button>Order Now</Button>
-          <Button color="tertiary">See Menu</Button>
+          <Button
+            onClick={() => {
+              const contactSection = document.querySelector("#contact-us");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Order Now
+          </Button>
+          <Button
+            color="tertiary"
+            onClick={() => {
+              const contactSection = document.querySelector("#menu");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            See Menu
+          </Button>
         </div>
       </div>
 

@@ -36,7 +36,16 @@ const Navbar = () => {
       </ul>
 
       <div className={styles["order-button"]}>
-        <Button color="secondary">
+        <Button
+          color="secondary"
+          onClick={() => {
+            const contactSection = document.querySelector("#contact-us");
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+            setIsOpen(false);
+          }}
+        >
           Order Now <ArrowRight />
         </Button>
       </div>
