@@ -6,6 +6,7 @@ import tiktokSVG from "../../assets/svg/tiktok.svg";
 import Button from "../Button/Button";
 import phoneSVG from "../../assets/svg/phone.svg";
 import locationSVG from "../../assets/svg/location.svg";
+import { ChevronUp } from "lucide-react";
 
 const Footer = () => {
   const navItems = [
@@ -35,7 +36,13 @@ const Footer = () => {
           </div>
 
           <div className={styles["back-to-top"]}>
-            <Button color="secondary">Back to Top</Button>
+            <Button
+              color="secondary"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              <ChevronUp />
+              Back to Top
+            </Button>
           </div>
         </div>
 
