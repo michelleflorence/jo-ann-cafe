@@ -6,7 +6,7 @@ import AllMenu from "../../../components/TabMenu/AllMenu/AllMenu";
 
 const MenuSection = () => {
   return (
-    <div className={styles["menu-section"]}>
+    <div className={styles["menu"]}>
       <div className={styles["flying-asset-one"]}>
         <img src={flyingAssetOne} alt="flying-asset" />
       </div>
