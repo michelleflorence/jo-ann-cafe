@@ -1,7 +1,9 @@
 import HeroSection from "../pages/section/HeroSection/HeroSection";
 import styles from "./LandingPage.module.scss";
 import rippedPaper from "../assets/ripped-paper.png";
+import rippedPaperTwo from "../assets/ripped-paper-two.png";
 import MenuSection from "../pages/section/MenuSection/MenuSection";
+import AboutSection from "./section/AboutSection/AboutSection";
 
 const LandingPage = () => {
   return (
@@ -16,6 +18,14 @@ const LandingPage = () => {
 
       <section className={styles["menu-section"]} id="menu">
         <MenuSection />
+      </section>
+
+      <section className={styles["about-section"]} id="about-us">
+        <div className={styles["ripped-paper-two"]}>
+          <img src={rippedPaperTwo} alt="ripped paper" />
+        </div>
+
+        <AboutSection />
       </section>
     </>
   );

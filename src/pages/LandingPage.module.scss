@@ -1,4 +1,6 @@
-.hero-section {
+.hero-section,
+.menu-section,
+.about-section {
   position: relative;
   z-index: 1;
 }
@@ -6,7 +8,7 @@
 .ripped-paper-one {
   position: relative;
   z-index: 2;
-  margin-top: -50px; // untuk nutup gap antara section
+  margin-top: -50px;
 
   img {
     display: block;
@@ -16,19 +18,37 @@
   }
 }
 
-.menu-section {
-  position: relative;
-  z-index: 1;
+.ripped-paper-two {
+  position: absolute;
+  bottom: 92%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 992px) {
   .ripped-paper-one {
     margin-top: -30px;
   }
+
+  .ripped-paper-two {
+    bottom: 97%;
+  }
 }
 
 @media (max-width: 576px) {
   .ripped-paper-one {
     margin-top: -15px;
+  }
+
+  .ripped-paper-two {
+    bottom: 98%;
   }
 }
