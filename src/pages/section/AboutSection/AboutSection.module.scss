@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: flex-start;
   padding: 80px 120px;
-  gap: 40px;
+  gap: 60px;
   background-color: #ffe7bd;
 
   .image-wrapper {
@@ -49,6 +49,7 @@
   .about {
     flex-direction: column;
     padding: 80px 60px;
+    gap: 30px;
 
     .text-container {
       .title {
@@ -68,6 +69,7 @@
   .about {
     padding: 80px 24px;
     flex-direction: column;
+    gap: 30px;
 
      .text-container {
       .title {
