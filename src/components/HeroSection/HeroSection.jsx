@@ -4,9 +4,9 @@ import Button from "../Button/Button";
 
 const HeroSection = () => {
   return (
-    <section className={styles["hero"]}>
-    <div className={styles["gradient-blur-top-left"]} />
-    <div className={styles["gradient-blur-top-right"]} />
+    <div className={styles["hero"]}>
+      <div className={styles["gradient-blur-top-left"]} />
+      <div className={styles["gradient-blur-top-right"]} />
       <div className={styles["content"]}>
         <h1>
           Start Your Day with{" "}
@@ -33,7 +33,7 @@ const HeroSection = () => {
         <span className={styles["rating"]}>4.8 ★</span>
         <span className={styles["sold"]}>18K</span>
       </div>
-    </section>
+    </div>
   );
 };
 

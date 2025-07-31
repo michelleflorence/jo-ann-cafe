@@ -1,0 +1,37 @@
+.tab-container {
+  width: 100%;
+}
+
+.tab-header {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  background-color: #f3f3f3;
+  color: #8f8f8f;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: "Poppins", sans-serif;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.active {
+  background-color: #693909;
+  color: white;
+}
+
+.tab-content {
+  padding: 0 16px;
+}
