@@ -31,7 +31,7 @@ const ContactSection = () => {
               defaultValue="14:00"
               type="time"
               label="Time"
-              name="Time"
+              name="time"
             />
             <InputField
               type="textarea"
@@ -39,7 +39,7 @@ const ContactSection = () => {
               name="message"
               placeholder="Enter your message"
             />
-            <Button type="submit">Order Now</Button>
+            <Button type="button">Order Now</Button>
           </form>
         </div>
       </div>
