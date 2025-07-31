@@ -69,8 +69,8 @@
     justify-content: center;
 
     .circle {
-      width: 300px;
-      height: 300px;
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
       background: #fcb946;
       position: absolute;
@@ -93,38 +93,44 @@
       font-weight: 600;
       font-size: 24px;
       color: #e4792c;
-      border-radius: 20px;
+      border-radius: 100px;
     }
 
     .rating {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 12px;
       position: absolute;
       top: 60px;
-      right: -12%;
+      right: -20%;
       color: black;
       padding: 10px 24px;
-      border-radius: 20px;
+      border-radius: 100px;
       font-weight: 600;
       font-size: 24px;
+      width: 160px;
     }
 
     .sold {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       bottom: 0;
-      left: 8%;
-      color: black;
+      left: -15%;
+      color: #693909;
       padding: 10px 24px;
-      border-radius: 20px;
+      border-radius: 100px;
       font-weight: 500;
       font-size: 24px;
+      width: 160px;
     }
 
     .label,
     .rating,
     .sold {
-      border: 2px solid transparent;
+      border: 6px solid transparent;
       background-image: linear-gradient(white, white),
         linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7));
       background-origin: border-box;
@@ -171,23 +177,25 @@
       .label,
       .rating,
       .sold {
-        font-size: 13.5px;
+        font-size: 14px;
         padding: 8px 20px;
       }
 
       .label {
         top: 0;
-        left: -10%;
+        left: -20%;
       }
 
       .rating {
         top: 50px;
-        right: -5%;
+        right: -10%;
+        width: fit-content;
       }
 
       .sold {
         bottom: 0;
-        left: 10%;
+        left: 5%;
+        width: fit-content;
       }
     }
   }
@@ -224,7 +232,7 @@
       .label,
       .rating,
       .sold {
-        font-size: 12.8px;
+        font-size: 12px;
         padding: 6px 16px;
       }
 
@@ -235,12 +243,14 @@
 
       .rating {
         top: 40px;
-        right: -10%;
+        right: -20%;
+        width: fit-content;
       }
 
       .sold {
         bottom: -10px;
-        left: 5%;
+        left: 10%;
+        width: fit-content;
       }
     }
 
