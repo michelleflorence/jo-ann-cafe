@@ -1,7 +1,7 @@
-import HeroSection from "../components/HeroSection/HeroSection";
+import HeroSection from "../pages/section/HeroSection/HeroSection";
 import styles from "./LandingPage.module.scss";
 import rippedPaper from "../assets/ripped-paper.png";
-import MenuSection from "../components/MenuSection/MenuSection";
+import MenuSection from "../pages/section/MenuSection/MenuSection";
 
 const LandingPage = () => {
   return (

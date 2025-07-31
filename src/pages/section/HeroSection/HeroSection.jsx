@@ -1,6 +1,7 @@
 import styles from "./HeroSection.module.scss";
-import rusticCoffee from "../../assets/img/HeroSection/rustic-coffee.png";
-import Button from "../Button/Button";
+import rusticCoffee from "../../../assets/img/HeroSection/rustic-coffee.png";
+import Button from "../../../components/Button/Button";
+import { Star } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -30,7 +31,9 @@ const HeroSection = () => {
           className={styles["image"]}
         />
         <span className={styles["label"]}>Rustic Coffee</span>
-        <span className={styles["rating"]}>4.8 ★</span>
+        <span className={styles["rating"]}>
+          4.8 <Star fill="#FFD057" color="#FFD057" />{" "}
+        </span>
         <span className={styles["sold"]}>18K</span>
       </div>
     </div>

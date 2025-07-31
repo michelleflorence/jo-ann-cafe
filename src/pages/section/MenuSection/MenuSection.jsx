@@ -1,7 +1,8 @@
 import styles from "./MenuSection.module.scss";
-import flyingAssetOne from "../../assets/img/MenuSection/flying-asset-one.png";
-import flyingAssetTwo from "../../assets/img/MenuSection/flying-asset-two.png";
-import TabMenu from "../TabMenu/TabMenu";
+import flyingAssetOne from "../../../assets/img/MenuSection/flying-asset-one.png";
+import flyingAssetTwo from "../../../assets/img/MenuSection/flying-asset-two.png";
+import TabMenu from "../../../components/TabMenu/TabMenu";
+import AllMenu from "../../../components/AllMenu/AllMenu";
 
 const MenuSection = () => {
   return (
@@ -26,7 +27,7 @@ const MenuSection = () => {
         <TabMenu
           defaultActive="all"
           tabs={[
-            { key: "all", label: "All Menu", content: <>All Menu</> },
+            { key: "all", label: "All Menu", content: <AllMenu /> },
             { key: "food", label: "Food", content: <>Food</> },
             { key: "drink", label: "Drink", content: <>Drink</> },
             { key: "snacks", label: "Snacks", content: <>Snack</> },
