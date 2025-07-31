@@ -5,7 +5,7 @@
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); // tiga kolom tetap
-  gap: 24px;
+  gap: 40px;
 
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr); // tablet
