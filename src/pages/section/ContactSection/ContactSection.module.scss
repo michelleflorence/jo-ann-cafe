@@ -1,0 +1,100 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 120px;
+  gap: 30px;
+
+  .card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    background-image: url("../../../assets/img/ContactSection/bg-coffee-and-space.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+
+    .left {
+      position: relative;
+      max-width: 500px;
+
+      .title {
+        font-size: 48px;
+        margin-bottom: 12px;
+        font-weight: bold;
+
+        .highlighted {
+          color: #ff8211;
+        }
+      }
+
+      .subtitle {
+        font-size: 20px;
+        margin-bottom: 24px;
+        color: #2A2A2A;
+        line-height: 1.5;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact {
+    flex-direction: column;
+    padding: 80px 60px;
+    gap: 24px;
+
+    .card {
+      flex-direction: column;
+      background-image: url("../../../assets/img/ContactSection/bg-coffee-and-space-tablet.png");
+
+      .left {
+        max-width: 100%;
+
+        .title {
+          font-size: 36px;
+        }
+
+        .subtitle {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .contact {
+    padding: 80px 24px;
+
+    .card {
+      background-image: url("../../../assets/img/ContactSection/bg-coffee-and-space-tablet.png");
+
+      .left {
+        .title {
+          font-size: 24px;
+        }
+
+        .subtitle {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

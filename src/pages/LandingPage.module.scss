@@ -1,6 +1,7 @@
 .hero-section,
 .menu-section,
-.about-section {
+.about-section,
+.contact-section {
   position: relative;
   z-index: 1;
 }
@@ -19,11 +20,22 @@
 }
 
 .ripped-paper-two {
-  position: absolute;
-  bottom: 92%;
-  left: 0;
-  width: 100%;
+  position: relative;
   z-index: 2;
+  margin-bottom: -70px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.ripped-paper-three {
+  position: relative;
+  z-index: 2;
+  margin-top: -58px;
 
   img {
     display: block;
@@ -39,7 +51,11 @@
   }
 
   .ripped-paper-two {
-    bottom: 97%;
+    margin-bottom: -40px;
+  }
+
+  .ripped-paper-three {
+    margin-top: -37px;
   }
 }
 
@@ -49,6 +65,10 @@
   }
 
   .ripped-paper-two {
-    bottom: 98%;
+    margin-bottom: -22px;
+  }
+
+  .ripped-paper-three {
+    margin-top: -19px;
   }
 }

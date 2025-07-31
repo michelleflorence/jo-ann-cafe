@@ -2,8 +2,10 @@ import HeroSection from "../pages/section/HeroSection/HeroSection";
 import styles from "./LandingPage.module.scss";
 import rippedPaper from "../assets/ripped-paper.png";
 import rippedPaperTwo from "../assets/ripped-paper-two.png";
+import rippedPaperThree from "../assets/ripped-paper-three.png";
 import MenuSection from "../pages/section/MenuSection/MenuSection";
 import AboutSection from "./section/AboutSection/AboutSection";
+import ContactSection from "./section/ContactSection/ContactSection";
 
 const LandingPage = () => {
   return (
@@ -26,6 +28,14 @@ const LandingPage = () => {
         </div>
 
         <AboutSection />
+      </section>
+
+      <section className={styles["contact-section"]} id="contact-us">
+        <div className={styles["ripped-paper-three"]}>
+          <img src={rippedPaperThree} alt="ripped paper" />
+        </div>
+
+        <ContactSection />
       </section>
     </>
   );
