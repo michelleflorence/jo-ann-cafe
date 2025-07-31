@@ -29,3 +29,9 @@
     font-weight: 600;
   }
 }
+
+@media (max-width: 600px) {
+  .pagination-container {
+    justify-content: center;
+  }
+}
