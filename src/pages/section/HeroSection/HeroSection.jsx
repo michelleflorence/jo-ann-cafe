@@ -31,9 +31,9 @@ const HeroSection = () => {
           <Button
             color="tertiary"
             onClick={() => {
-              const contactSection = document.querySelector("#menu");
-              if (contactSection) {
-                contactSection.scrollIntoView({ behavior: "smooth" });
+              const menuSection = document.querySelector("#menu");
+              if (menuSection) {
+                menuSection.scrollIntoView({ behavior: "smooth" });
               }
             }}
           >
