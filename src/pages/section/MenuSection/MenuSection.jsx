@@ -3,6 +3,9 @@ import flyingAssetOne from "@/assets/img/MenuSection/flying-asset-one.png";
 import flyingAssetTwo from "@/assets/img/MenuSection/flying-asset-two.png";
 import TabMenu from "@/components/TabMenu/TabMenu";
 import AllMenu from "@/components/TabMenu/AllMenu/AllMenu";
+import FoodMenu from "@/components/TabMenu/FoodMenu/FoodMenu";
+import DrinkMenu from "@/components/TabMenu/DrinkMenu/DrinkMenu";
+import OtherMenu from "@/components/TabMenu/OtherMenu/OtherMenu";
 
 const MenuSection = () => {
   return (
@@ -31,10 +34,10 @@ const MenuSection = () => {
             {
               key: "food-snack",
               label: "Food & Snack",
-              content: <>Food and Snack</>,
+              content: <FoodMenu />,
             },
-            { key: "drink", label: "Drink", content: <>Drink</> },
-            { key: "other", label: "Other", content: <>Other</> },
+            { key: "drink", label: "Drink", content: <DrinkMenu /> },
+            { key: "other", label: "Other", content: <OtherMenu /> },
           ]}
         />
       </div>

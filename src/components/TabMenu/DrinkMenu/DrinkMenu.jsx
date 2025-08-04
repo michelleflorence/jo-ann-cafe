@@ -2,15 +2,15 @@ import { useState } from "react";
 import styles from "../TabMenu.module.scss";
 import MenuCard from "@/components/Card/MenuCard";
 import Pagination from "@/components/Pagination/Pagination";
-import { allMenuData } from "@/data/MenuCard";
+import { drinkMenuData } from "@/data/MenuCard";
 
-const AllMenu = () => {
+const DrinkMenu = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = allMenuData.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = drinkMenuData.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
     <div className={styles["container"]}>
@@ -23,12 +23,12 @@ const AllMenu = () => {
       <div className={styles["pagination-container"]}>
         <p>
           Showing {indexOfFirstItem + 1} to{" "}
-          {Math.min(indexOfLastItem, allMenuData.length)} of{" "}
-          {allMenuData.length}
+          {Math.min(indexOfLastItem, drinkMenuData.length)} of{" "}
+          {drinkMenuData.length}
         </p>
         <Pagination
           currentPage={currentPage}
-          totalItems={allMenuData.length}
+          totalItems={drinkMenuData.length}
           itemsPerPage={itemsPerPage}
           onPageChange={setCurrentPage}
         />
@@ -37,4 +37,4 @@ const AllMenu = () => {
   );
 };
 
-export default AllMenu;
+export default DrinkMenu;

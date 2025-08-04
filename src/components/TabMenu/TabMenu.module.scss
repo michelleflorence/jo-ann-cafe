@@ -31,3 +31,42 @@
   background-color: #693909;
   color: white;
 }
+
+.container {
+  padding: 32px 16px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // tiga kolom tetap
+  gap: 40px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr); // tablet
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr); // mobile
+    gap: 30px;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  p {
+    color: #693909;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 600px) {
+  .pagination-container {
+    justify-content: center;
+  }
+}
