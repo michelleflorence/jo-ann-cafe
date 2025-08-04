@@ -1,8 +1,8 @@
 import styles from "./Navbar.module.scss";
-import logo from "../../assets/logo.png";
+import logo from "@/assets/logo.png";
 import { useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
-import Button from "../Button/Button";
+import Button from "@/components/Button/Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,11 +1,11 @@
 import styles from "./Footer.module.scss";
-import logo from "../../assets/logo.png";
-import instagramSVG from "../../assets/svg/instagram.svg";
-import facebookSVG from "../../assets/svg/facebook.svg";
-import tiktokSVG from "../../assets/svg/tiktok.svg";
-import Button from "../Button/Button";
-import phoneSVG from "../../assets/svg/phone.svg";
-import locationSVG from "../../assets/svg/location.svg";
+import logo from "@/assets/logo.png";
+import instagramSVG from "@/assets/svg/instagram.svg";
+import facebookSVG from "@/assets/svg/facebook.svg";
+import tiktokSVG from "@/assets/svg/tiktok.svg";
+import Button from "@/components/Button/Button";
+import phoneSVG from "@/assets/svg/phone.svg";
+import locationSVG from "@/assets/svg/location.svg";
 import { ChevronUp } from "lucide-react";
 
 const Footer = () => {
