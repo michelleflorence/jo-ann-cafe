@@ -486,7 +486,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 62,
+    id: 61,
     name: "JC Hot Dog",
     price: "IDR 25.000",
     desc: "Grilled sausage in a soft bun with mayo, mustard, and crispy onions.",
@@ -494,7 +494,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 63,
+    id: 62,
     name: "JC Beef Ball",
     price: "IDR 28.000",
     desc: "Juicy beef meatballs served with savory sauce and melted cheese topping.",
@@ -502,7 +502,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 64,
+    id: 63,
     name: "Bakso JC",
     price: "IDR 25.000",
     desc: "Meatball soup with noodles, tofu, and our signature spicy broth.",
@@ -510,7 +510,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 65,
+    id: 64,
     name: "Roti Bambu",
     price: "IDR 15.000",
     desc: "Soft steamed bread served in bamboo, with a hint of sweetness.",
@@ -518,7 +518,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 66,
+    id: 65,
     name: "Kimbab Bulgogi",
     price: "IDR 18.000",
     desc: "Korean rice rolls filled with bulgogi beef, veggies, and sesame oil.",
@@ -526,7 +526,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 67,
+    id: 66,
     name: "Kimbab Telur Gulung",
     price: "IDR 16.000",
     desc: "Egg-wrapped kimbab with mixed vegetables and flavorful seasoning.",
@@ -534,7 +534,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 68,
+    id: 67,
     name: "Bibimbap",
     price: "IDR 18.000",
     desc: "Mixed rice bowl with vegetables, beef, fried egg, and spicy sauce.",
@@ -542,7 +542,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 69,
+    id: 68,
     name: "Lemon Tea (Hot)",
     price: "IDR 10.000",
     desc: "Refreshing black tea with a hint of lemon, served hot to warm your day.",
@@ -550,7 +550,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 70,
+    id: 69,
     name: "Lemon Tea (Ice)",
     price: "IDR 12.000",
     desc: "Chilled lemon-infused tea with a tangy twist, perfect for hot days.",
@@ -558,7 +558,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 71,
+    id: 70,
     name: "Lychee Tea (Hot)",
     price: "IDR 10.000",
     desc: "Aromatic tea blended with the sweet and floral flavor of lychee, served hot.",
@@ -566,7 +566,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 72,
+    id: 71,
     name: "Lychee Tea (Ice)",
     price: "IDR 12.000",
     desc: "Sweet lychee tea served over ice, refreshing and fruity with every sip.",
@@ -574,7 +574,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 73,
+    id: 72,
     name: "Oolong Tea (Hot)",
     price: "IDR 10.000",
     desc: "Traditional Chinese tea with a smooth roasted taste, served warm.",
@@ -582,7 +582,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 74,
+    id: 73,
     name: "Oolong Tea (Ice)",
     price: "IDR 12.000",
     desc: "Cool and earthy oolong tea over ice, perfect for a refreshing pause.",
@@ -590,7 +590,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 75,
+    id: 74,
     name: "English Breakfast Tea (Hot)",
     price: "IDR 10.000",
     desc: "Classic black tea blend with a bold flavor, served hot for a morning boost.",
@@ -598,7 +598,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 76,
+    id: 75,
     name: "English Breakfast Tea (Ice)",
     price: "IDR 12.000",
     desc: "Bold and smooth black tea served cold, perfect for an afternoon refresh.",
@@ -606,7 +606,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 77,
+    id: 76,
     name: "Black Tea Cheese",
     price: "IDR 18.000",
     desc: "Rich black tea topped with a smooth, creamy cheese foam for a savory-sweet experience.",
@@ -614,7 +614,7 @@ export const allMenuData = [
     isFavorite: true,
   },
   {
-    id: 78,
+    id: 77,
     name: "Virgin Mojito",
     price: "IDR 17.000",
     desc: "Refreshing blend of lime, mint, and soda for a crisp and cool non-alcoholic twist.",
@@ -622,7 +622,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 79,
+    id: 78,
     name: "Lychee Breeze",
     price: "IDR 17.000",
     desc: "Sweet and floral lychee drink served chilled with a light citrusy touch.",
@@ -630,7 +630,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 80,
+    id: 79,
     name: "Honey Lemon",
     price: "IDR 17.000",
     desc: "Zesty lemon drink sweetened with natural honey, soothing and revitalizing.",
@@ -638,7 +638,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 81,
+    id: 80,
     name: "Punch Peach Passion",
     price: "IDR 17.000",
     desc: "Fruity mix of peach and passion fruit with a punchy tropical flavor burst.",
@@ -646,7 +646,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 82,
+    id: 81,
     name: "JC Blossom",
     price: "IDR 17.000",
     desc: "Floral-infused drink with delicate fruity notes, refreshing like springtime bloom.",
@@ -654,7 +654,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 83,
+    id: 82,
     name: "Magic Sunset Squash",
     price: "IDR 17.000",
     desc: "Layered citrus squash with a beautiful gradient and a burst of sunset flavors.",
@@ -662,7 +662,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 84,
+    id: 83,
     name: "Mojito Orange",
     price: "IDR 17.000",
     desc: "Citrusy mojito twist with orange juice, mint, and soda for a vibrant sip.",
@@ -670,7 +670,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 85,
+    id: 84,
     name: "Mojito Orange",
     price: "IDR 17.000",
     desc: "Zesty and sparkling orange mojito, balanced with minty freshness.",
@@ -678,7 +678,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 86,
+    id: 85,
     name: "Green Lime",
     price: "IDR 17.000",
     desc: "Bright green lime cooler with a tangy kick and a sparkling finish.",
@@ -686,7 +686,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 87,
+    id: 86,
     name: "Blush Punch",
     price: "IDR 17.000",
     desc: "A pretty pink punch with a blend of berries and citrus for a bold refreshment.",
@@ -694,7 +694,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 88,
+    id: 87,
     name: "Rendang Rice + Ice Milo Latte",
     price: "IDR 30.000",
     desc: "Spicy-sweet rendang rice paired with a chilled Milo latte for a comforting and satisfying combo.",
@@ -702,7 +702,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 89,
+    id: 88,
     name: "Blackpepper Rice + Black Tea Cheese",
     price: "IDR 27.000",
     desc: "Savory blackpepper rice balanced with the rich and creamy flavor of black tea cheese.",
@@ -710,7 +710,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 90,
+    id: 89,
     name: "JC Platter + Rustic Coffee",
     price: "IDR 27.000",
     desc: "A hearty JC Platter of assorted bites served with bold and aromatic rustic coffee.",
@@ -718,7 +718,7 @@ export const allMenuData = [
     isFavorite: false,
   },
   {
-    id: 91,
+    id: 90,
     name: "Pasta (Bebas Pilih) + Red Velvet Oreo",
     price: "IDR 30.000",
     desc: "Customizable pasta dish of your choice, complemented by a sweet Red Velvet Oreo drink.",
