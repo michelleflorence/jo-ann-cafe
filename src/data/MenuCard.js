@@ -1,4 +1,8 @@
-import rusticCoffee from "../assets/img/MenuSection/rustic-coffee.png";
+import rusticCoffee from "@/assets/img/MenuSection/AllMenu/rustic-coffee.png";
+import nasiAyamLalapan from "@/assets//img/MenuSection/AllMenu/nasi-ayam-lalapan.png";
+import chickenRiceKoreanSauce from "@/assets//img/MenuSection/AllMenu/chicken-rice-korean-sauce.png";
+import empalSuirSambal from "@/assets//img/MenuSection/AllMenu/empal-suir-sambal.png";
+import barbequeRice from "@/assets//img/MenuSection/AllMenu/barbeque-rice.png";
 
 export const allMenuData = [
   {
@@ -6,7 +10,7 @@ export const allMenuData = [
     name: "Nasi Ayam Lalapan",
     price: "IDR 28.000",
     desc: "Crispy fried chicken served with fresh vegetables and sambal.",
-    image: rusticCoffee,
+    image: nasiAyamLalapan,
     isFavorite: false,
   },
   {
@@ -14,7 +18,7 @@ export const allMenuData = [
     name: "Chicken Rice Korean Sauce",
     price: "IDR 25.000",
     desc: "Steamed rice topped with chicken and sweet-spicy Korean sauce.",
-    image: rusticCoffee,
+    image: chickenRiceKoreanSauce,
     isFavorite: false,
   },
   {
@@ -22,7 +26,7 @@ export const allMenuData = [
     name: "Empal Suir Sambal JC",
     price: "IDR 28.000",
     desc: "Shredded seasoned beef with our signature spicy sambal.",
-    image: rusticCoffee,
+    image: empalSuirSambal,
     isFavorite: false,
   },
   {
@@ -30,7 +34,7 @@ export const allMenuData = [
     name: "Barbeque Rice",
     price: "IDR 20.000",
     desc: "Grilled BBQ meat over rice with savory sauce and garnish.",
-    image: rusticCoffee,
+    image: barbequeRice,
     isFavorite: false,
   },
   {
@@ -413,6 +417,30 @@ export const allMenuData = [
     id: 52,
     name: "Red Bun Pao",
     price: "IDR 16.000",
+    desc: "Soft red-colored bun filled with flavorful chicken or beef filling.",
+    image: rusticCoffee,
+    isFavorite: false,
+  },
+  {
+    id: 53,
+    name: "Chocolate Cake (with Ice Cream",
+    price: "IDR 18.000",
+    desc: "Soft red-colored bun filled with flavorful chicken or beef filling.",
+    image: rusticCoffee,
+    isFavorite: false,
+  },
+  {
+    id: 54,
+    name: "Strawberry Cake (with Ice Cream)",
+    price: "IDR 18.000",
+    desc: "Soft red-colored bun filled with flavorful chicken or beef filling.",
+    image: rusticCoffee,
+    isFavorite: false,
+  },
+  {
+    id: 55,
+    name: "Lava Cake (with Ice Cream)",
+    price: "IDR 28.000",
     desc: "Soft red-colored bun filled with flavorful chicken or beef filling.",
     image: rusticCoffee,
     isFavorite: false,

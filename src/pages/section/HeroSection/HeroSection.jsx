@@ -1,6 +1,6 @@
 import styles from "./HeroSection.module.scss";
-import rusticCoffee from "../../../assets/img/HeroSection/rustic-coffee.png";
-import Button from "../../../components/Button/Button";
+import rusticCoffee from "@/assets/img/HeroSection/rustic-coffee.png";
+import Button from "@/components/Button/Button";
 import { Star } from "lucide-react";
 
 const HeroSection = () => {

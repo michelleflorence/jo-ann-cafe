@@ -1,5 +1,5 @@
 import styles from "./AboutSection.module.scss";
-import aboutImage from "../../../assets/img/AboutSection/about-image.png";
+import aboutImage from "@/assets/img/AboutSection/about-image.png";
 
 const AboutSection = () => {
   return (

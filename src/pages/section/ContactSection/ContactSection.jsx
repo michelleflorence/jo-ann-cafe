@@ -1,6 +1,6 @@
 import styles from "./ContactSection.module.scss";
-import Button from "../../../components/Button/Button";
-import InputField from "../../../components/InputField/InputField";
+import Button from "@/components/Button/Button";
+import InputField from "@/components/InputField/InputField";
 
 const ContactSection = () => {
   return (
